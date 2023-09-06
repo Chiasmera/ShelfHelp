@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title ShelfHelp
+        link(rel="stylesheet", href="home.css")
+        script(src="onLoad.js" defer) 
+    body
+        .optionsContainer
+            label(for='user') Username
+            input(type="text", id='user', value='LuciusWriter', class='text input')
+            label(for='shelfX') Columns
+            input(type="number", id='shelfX', value=5, class='number input')
+            label(for='shelfy') Max Rows
+            input(type="number", id='shelfY', value=5, class='number input')
+            label(for='shelfWidth') Max Shelf Width
+            input(type="number", id='shelfWidth', value=33, class='number input')
+            label(for='shelfHeight') Max Shelf Height
+            input(type="number", id='shelfHeight', value=33, class='number input')
+            label(for='shelfDepth') Max Shelf Height
+            input(type="number", id='shelfDepth', value=38, class='number input')
+            button(id="fillShelvesButton") Fill Shelves
+        .leftoverContainer
+        table.shelfContainer
+
+
